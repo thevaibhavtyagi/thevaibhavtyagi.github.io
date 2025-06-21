@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaibhav's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style1.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" xintegrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link id='favicon' rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-png">
 </head>
 <body>
@@ -40,12 +40,12 @@
             <p>I am committed to building efficient, user-focused software solutions that blend innovation with functionality. My goal is to leverage my skills in coding and design to create impactful digital experiences. Driven by a strong problem-solving mindset, I aspire to make meaningful contributions to the tech world.</p>
             <div class="btn-box">
                 <a href="https://thumbs.dreamstime.com/b/rubber-stamp-text-hire-me-inside-illustration-hire-me-109041142.jpg" class="btn btn-primary">Hire Me</a>
-                <a href="12400485_G1_A26.pdf" class="btn btn-secondary">Get My CV</a>
+                <a href="Vaibhav_Tyagi_CV.pdf" class="btn btn-secondary">Get My CV</a>
             </div>
         </div>
         <div class="image-container">
             <div class="image-wrapper">
-                <img src="my_image1.png" alt="Vaibhav's profile picture">
+                <img src="my_image1.jpg" alt="Vaibhav's profile picture">
             </div>
         </div>
     </section>
@@ -53,7 +53,7 @@
     <section class="about" id="about">
         <div class="about-img">
             <div class="image-wrapper">
-                <img src="my_image1.1.png" alt="Vaibhav's about me picture">
+                <img src="my_image1.1.jpg" alt="Vaibhav's about me picture">
             </div>
         </div>
         <div class="about-content">
@@ -71,7 +71,7 @@
         </div>
       
         <div class="timeline">
-            <div class="container left">
+             <div class="container left">
                 <div class="content">
                     <div class="tag">
                         <h2>Schooling</h2>
@@ -277,9 +277,6 @@
         </div>
     
         <ul class="list">
-            <!-- <li>
-                <a href="#">FAQ</a>
-            </li> -->
             <li>
                 <a href="#about">About Me</a>
             </li>
@@ -296,12 +293,173 @@
     
         <p class="copyright">&copy; 2024 Vaibhav | All Rights Reserved</p>
     </footer>
+
+    <!-- Chatbot HTML -->
+    <div class="chatbot-container">
+        <div class="chatbot-toggler">
+            <i class='bx bxs-bot'></i>
+            <i class='bx bx-x'></i>
+        </div>
+        <div class="chatbot">
+            <header>
+                <h2>Vaibhav's AI</h2>
+                <span class="close-btn"><i class='bx bx-x'></i></span>
+            </header>
+            <ul class="chatbox">
+                <li class="chat incoming">
+                    <span class="material-symbols-outlined"><i class='bx bxs-bot'></i></span>
+                    <p>Hi there! I'm Vaibhav's AI assistant. How can I help you today?</p>
+                </li>
+            </ul>
+            <div class="chat-input">
+                <textarea placeholder="Ask me anything about Vaibhav..." required></textarea>
+                <span id="send-btn"><i class='bx bxl-telegram'></i></span>
+            </div>
+        </div>
+    </div>
     
-    
-    
-    
-    
-    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const chatbotToggler = document.querySelector(".chatbot-toggler");
+            const closeBtn = document.querySelector(".close-btn");
+            const chatbox = document.querySelector(".chatbox");
+            const chatInput = document.querySelector(".chat-input textarea");
+            const sendChatBtn = document.querySelector("#send-btn");
+
+            // --- Gemini API Configuration ---
+            const API_KEY = "AIzaSyCHdbevDf5Axbo1BjKsEek-h1845FQv-Nw";
+
+            // --- Context data about Vaibhav ---
+            const vaibhavData = `
+                About Vaibhav Tyagi: 
+                - An aspiring Software Developer and a Computer Science Engineering Student.
+                - Committed to building efficient, user-focused software solutions.
+                - Aims to leverage skills in coding and design for impactful digital experiences.
+                - Has a strong problem-solving mindset, driven by curiosity, creativity, and continuous learning.
+                - Contact: tyagivaibhav430@gmail.com | +91-8630287394
+                - Profiles: linkedin.com/in/Vaibhav-tyagi18, github.com/Vaibhav-05-1, vaibhav-05-1.github.io
+
+                Education:
+                - B.Tech in CSE from Lovely Professional University (July 2024 - Present).
+                - 12th from S.G.R.R Public School, Deoband (CGPA: 8.18).
+                - 10th from S.G.R.R Public School, Deoband (CGPA: 7.45).
+            
+                Skills:
+                - Programming: Python (Intermediate), HTML (95%), CSS (90%), JavaScript (Beginner).
+                - Tools: Visual Studio Code, GitHub.
+                - Soft Skills: Problem-Solving, Quick Learning, Time Management (85%), Adaptability (90%), Communication, Teamwork (75%), Leadership (91%).
+
+                Projects:
+                1. Personal Portfolio: Responsive website using HTML/CSS with animations.
+                2. Smart Waste Segregation: Arduino system with ultrasonic sensors for automated waste sorting.
+                3. Environmental Conservation Game: An interactive, educational game.
+
+                Achievements:
+                - 3 Stars in Python on HackerRank.
+                - Honored by Tyagi's Community for 10th & 12th exam performance.
+                - Qualified and completed Level 2 in Hack-a-Throne 1.0 by AIESEC.
+                - Ranked Top 3 in class in 12th Standard.
+
+                Certificates:
+                - Full Stack Web Development (SimpliLearn)
+                - CSS Basics (HackerRank)
+                - Interview Skills (Coding Tantra)
+                - Communication and Public Speaking (LPU)
+            `;
+
+            let userMessage;
+
+            const createChatLi = (message, className) => {
+                const chatLi = document.createElement("li");
+                chatLi.classList.add("chat", className);
+                let chatContent = className === "outgoing" ? `<p></p>` : `<span class="material-symbols-outlined"><i class='bx bxs-bot'></i></span><p></p>`;
+                chatLi.innerHTML = chatContent;
+                chatLi.querySelector("p").textContent = message;
+                return chatLi;
+            }
+            
+            const generateResponse = (incomingChatLi) => {
+                // Correct and working API endpoint for Gemini
+                const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${API_KEY}`;
+                const messageElement = incomingChatLi.querySelector("p");
+
+                const prompt = `
+                    You are "Vaibhav's AI", a professional and friendly AI assistant for Vaibhav Tyagi's portfolio website. 
+                    Your single most important rule is to ONLY use the information provided below. Under no circumstances should you provide information from outside this document or make assumptions. 
+                    If a question is asked that cannot be answered from the provided data (e.g., personal opinions, favorite color, etc.), you must politely decline and state that you can only answer questions about Vaibhav's professional background. 
+                    Keep your answers concise and helpful.
+
+                    Here is the complete data about Vaibhav:
+                    ---
+                    ${vaibhavData}
+                    ---
+
+                    User Question: "${userMessage}"
+
+                    Answer:
+                `;
+
+                const requestPayload = {
+                    contents: [{ parts: [{ text: prompt }] }]
+                };
+
+                fetch(API_URL, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(requestPayload)
+                }).then(res => res.json()).then(data => {
+                    if (data.candidates && data.candidates[0]?.content?.parts[0]?.text) {
+                        messageElement.textContent = data.candidates[0].content.parts[0].text.trim();
+                    } else {
+                        console.error("API Error Response:", data);
+                        messageElement.textContent = "Oops! I seem to be having trouble connecting. Please try again later.";
+                        if (data.error) {
+                            messageElement.textContent = `Error: ${data.error.message}. Please check the API Key and model name.`;
+                        }
+                    }
+                }).catch((error) => {
+                    console.error("Fetch Error:", error);
+                    messageElement.textContent = "Oops! Something went wrong. Please check your network connection or try again later.";
+                }).finally(() => {
+                    messageElement.classList.remove("thinking");
+                    chatbox.scrollTo(0, chatbox.scrollHeight);
+                });
+            }
+
+            const handleChat = () => {
+                userMessage = chatInput.value.trim();
+                if(!userMessage) return;
+                chatInput.value = "";
+                chatInput.style.height = "auto";
+
+                chatbox.appendChild(createChatLi(userMessage, "outgoing"));
+                chatbox.scrollTo(0, chatbox.scrollHeight);
+
+                setTimeout(() => {
+                    const incomingChatLi = createChatLi("Thinking", "incoming");
+                    incomingChatLi.querySelector("p").classList.add("thinking");
+                    chatbox.appendChild(incomingChatLi);
+                    chatbox.scrollTo(0, chatbox.scrollHeight);
+                    generateResponse(incomingChatLi);
+                }, 600);
+            }
+
+            chatInput.addEventListener("input", () => {
+                chatInput.style.height = "auto";
+                chatInput.style.height = `${chatInput.scrollHeight}px`;
+            });
+
+            chatInput.addEventListener("keydown", (e) => {
+                if(e.key === "Enter" && !e.shiftKey) {
+                    e.preventDefault();
+                    handleChat();
+                }
+            });
+
+            sendChatBtn.addEventListener("click", handleChat);
+            closeBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
+            chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+        });
+    </script>
 </body>
 </html>
-
