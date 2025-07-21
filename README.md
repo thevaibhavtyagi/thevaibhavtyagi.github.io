@@ -35,7 +35,12 @@ This GitHub Pages project now acts as a clean redirection gateway to my **new an
 ---
 
 ### 🙋‍♂️ About Me
-I'm **Vaibhav Tyagi**, a Computer Science & Engineering student passionate about Web Development, Design Systems, and Smart Interfaces.  
+I'm **Vaibhav Tyagi**, a Computer Science & Engineering student passionate about crafting intelligent systems and beautiful user experiences.
+
+💡 I aspire to build a successful career in **Artificial Intelligence**, while also diving deep into **Full Stack Development** and delivering **world-class UI/UX**.
+
+From front-end finesse to backend logic — I love combining smart tech with stunning design to solve real-world problems and build futuristic apps.
+
 You can connect with me below:
 
 - 📧 Email: tyagivaibhav430@gmail.com  
