@@ -1,10 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta http-equiv="refresh" content="0; url=https://vaibhavtyagi.vercel.app/" />
-    <title>Redirecting...</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting to Vaibhav Tyagi's New Portfolio</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CDN for quick styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ['Inter', 'sans-serif'],
+              grotesk: ['Space Grotesk', 'sans-serif'],
+            },
+            colors: {
+              primary: {
+                50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd',
+                400: '#60a5fa', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8',
+                800: '#1e40af', 900: '#1e3a8a'
+              },
+              secondary: {
+                50: '#f0fdfa', 100: '#ccfbf1', 200: '#99f6e4', 300: '#5eead4',
+                400: '#2dd4bf', 500: '#14b8a6', 600: '#0d9488', 700: '#0f766e',
+                800: '#115e59', 900: '#134e4a'
+              },
+              accent: {
+                50: '#fff7ed', 100: '#ffedd5', 200: '#fed7aa', 300: '#fdba74',
+                400: '#fb923c', 500: '#f97316', 600: '#ea580c', 700: '#c2410c',
+                800: '#9a3412', 900: '#7c2d12'
+              }
+            },
+          }
+        }
+      }
+    </script>
+
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(to bottom right, #eff6ff, #f0fdfa);
+        overflow: hidden;
+      }
+      .fade-in {
+        animation: fadeInUp 1.2s ease-out forwards;
+      }
+      .orb {
+        width: 200px;
+        height: 200px;
+        background: radial-gradient(circle, #3b82f6, #60a5fa);
+        filter: blur(80px);
+        position: absolute;
+        border-radius: 9999px;
+        animation: float 6s ease-in-out infinite;
+      }
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes float {
+        0%, 100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+    </style>
+
+    <script>
+      setTimeout(() => {
+        window.location.href = "https://vaibhavtyagi.vercel.app";
+      }, 3000); // 3 seconds
+    </script>
   </head>
-  <body>
-    <p>If you're not redirected, <a href="https://vaibhavtyagi.vercel.app/">click here</a>.</p>
+  <body class="relative flex items-center justify-center h-screen w-screen">
+    <!-- Decorative background orbs -->
+    <div class="orb top-[-50px] left-[-50px]"></div>
+    <div class="orb bottom-[-50px] right-[-50px] bg-secondary-500"></div>
+
+    <!-- Glass panel -->
+    <div class="fade-in bg-white/20 border border-white/30 backdrop-blur-2xl shadow-xl rounded-2xl p-8 max-w-lg text-center">
+      <h1 class="font-grotesk text-2xl sm:text-3xl font-semibold text-gray-800 mb-4">
+        🚀 Redirecting to Vaibhav Tyagi's New Portfolio...
+      </h1>
+      <p class="text-gray-600 text-base">
+        If you're not redirected automatically,
+        <a href="https://vaibhavtyagi.vercel.app" class="text-primary-600 font-medium hover:underline">click here</a>.
+      </p>
+    </div>
   </body>
 </html>
