@@ -43,7 +43,6 @@ From front-end finesse to backend logic — I love combining smart tech with stu
 
 You can connect with me below:
 
-- 📧 Email: tyagivaibhav430@gmail.com  
 - 💼 LinkedIn: [linkedin.com/in/vaibhav-tyagi18](https://linkedin.com/in/vaibhav-tyagi18)  
 - 💻 GitHub: [github.com/thevaibhavtyagi](https://github.com/thevaibhavtyagi)
 
