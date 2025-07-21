@@ -1,103 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Redirecting to Vaibhav Tyagi's New Portfolio</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav's Portfolio - Redirecting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link id='favicon' rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-png">
+    <meta http-equiv="refresh" content="2;url=https://vaibhavtyagi.vercel.app/">
+</head>
+<body>
+    <!-- Floating Background Elements -->
+    <div class="floating-orb orb-1"></div>
+    <div class="floating-orb orb-2"></div>
+    <div class="floating-orb orb-3"></div>
+    <div class="particle particle-1"></div>
+    <div class="particle particle-2"></div>
+    <div class="particle particle-3"></div>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <div class="container">
+        <div class="content-card">
+            <!-- Logo -->
+            <div class="logo">
+                <span class="logo-part1">Vaib</span><span class="logo-part2">hav</span>
+            </div>
 
-    <!-- Tailwind CDN for quick styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              inter: ['Inter', 'sans-serif'],
-              grotesk: ['Space Grotesk', 'sans-serif'],
-            },
-            colors: {
-              primary: {
-                50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd',
-                400: '#60a5fa', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8',
-                800: '#1e40af', 900: '#1e3a8a'
-              },
-              secondary: {
-                50: '#f0fdfa', 100: '#ccfbf1', 200: '#99f6e4', 300: '#5eead4',
-                400: '#2dd4bf', 500: '#14b8a6', 600: '#0d9488', 700: '#0f766e',
-                800: '#115e59', 900: '#134e4a'
-              },
-              accent: {
-                50: '#fff7ed', 100: '#ffedd5', 200: '#fed7aa', 300: '#fdba74',
-                400: '#fb923c', 500: '#f97316', 600: '#ea580c', 700: '#c2410c',
-                800: '#9a3412', 900: '#7c2d12'
-              }
-            },
-          }
-        }
-      }
-    </script>
+            <!-- Main Message -->
+            <h1 class="main-heading">
+                Portfolio <span class="gradient-text">Upgraded</span>
+            </h1>
+
+            <p class="description">
+                My portfolio has moved to a brand new, fully-featured platform with enhanced design and functionality.
+            </p>
+
+            <!-- Countdown Timer -->
+            <div class="countdown-container">
+                <div class="countdown-circle">
+                    <svg class="countdown-svg" viewBox="0 0 100 100">
+                        <circle class="countdown-track" cx="50" cy="50" r="45"></circle>
+                        <circle class="countdown-progress" cx="50" cy="50" r="45"></circle>
+                    </svg>
+                    <div class="countdown-number">
+                        <span id="countdown">2</span>
+                    </div>
+                </div>
+                <p class="countdown-text">Redirecting automatically...</p>
+            </div>
+
+            <!-- Manual Redirect Button -->
+            <div class="button-container">
+                <a href="https://vaibhavtyagi.vercel.app/" class="redirect-btn">
+                    <span class="btn-text">Visit New Portfolio</span>
+                    <div class="btn-glow"></div>
+                </a>
+            </div>
+
+            <!-- Features Preview -->
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">✨</div>
+                    <span>Modern Design</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🚀</div>
+                    <span>Enhanced Performance</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📱</div>
+                    <span>Mobile Optimized</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <style>
-      body {
-        font-family: 'Inter', sans-serif;
-        background: linear-gradient(to bottom right, #eff6ff, #f0fdfa);
-        overflow: hidden;
-      }
-      .fade-in {
-        animation: fadeInUp 1.2s ease-out forwards;
-      }
-      .orb {
-        width: 200px;
-        height: 200px;
-        background: radial-gradient(circle, #3b82f6, #60a5fa);
-        filter: blur(80px);
-        position: absolute;
-        border-radius: 9999px;
-        animation: float 6s ease-in-out infinite;
-      }
-      @keyframes fadeInUp {
-        0% {
-          opacity: 0;
-          transform: translateY(40px);
+        :root {
+            /* Primary Colors (Blue) */
+            --primary-50: #eff6ff;
+            --primary-100: #dbeafe;
+            --primary-200: #bfdbfe;
+            --primary-300: #93c5fd;
+            --primary-400: #60a5fa;
+            --primary-500: #3b82f6;
+            --primary-600: #2563eb;
+            --primary-700: #1d4ed8;
+            --primary-800: #1e40af;
+            --primary-900: #1e3a8a;
+
+            /* Secondary Colors (Teal/Cyan) */
+            --secondary-50: #f0fdfa;
+            --secondary-100: #ccfbf1;
+            --secondary-200: #99f6e4;
+            --secondary-300: #5eead4;
+            --secondary-400: #2dd4bf;
+            --secondary-500: #14b8a6;
+            --secondary-600: #0d9488;
+            --secondary-700: #0f766e;
+            --secondary-800: #115e59;
+            --secondary-900: #134e4a;
+
+            /* Accent Colors (Orange) */
+            --accent-50: #fff7ed;
+            --accent-100: #ffedd5;
+            --accent-200: #fed7aa;
+            --accent-300: #fdba74;
+            --accent-400: #fb923c;
+            --accent-500: #f97316;
+            --accent-600: #ea580c;
+            --accent-700: #c2410c;
+            --accent-800: #9a3412;
+            --accent-900: #7c2d12;
+
+            /* Neutral Colors */
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-300: #d1d5db;
+            --gray-400: #9ca3af;
+            --gray-500: #6b7280;
+            --gray-600: #4b5563;
+            --gray-700: #374151;
+            --gray-800: #1f2937;
+            --gray-900: #111827;
         }
-        100% {
-          opacity: 1;
-          transform: translateY(0);
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-      }
-      @keyframes float {
-        0%, 100% {
-          transform: translateY(0px);
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, var(--primary-50) 0%, #ffffff 50%, var(--secondary-50) 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
         }
-        50% {
-          transform: translateY(-20px);
+
+        /* Floating Background Elements */
+        .floating-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            pointer-events: none;
+            z-index: 1;
         }
-      }
+
+        .orb-1 {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, var(--primary-300), var(--secondary-300));
+            top: -150px;
+            left: -150px;
+            animation: float-1 15s ease-in-out infinite;
+        }
+
+        .orb-2 {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, var(--secondary-400), var(--accent-300));
+            bottom: -100px;
+            right: -100px;
+            animation: float-2 12s ease-in-out infinite;
+        }
+
+        .orb-3 {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, var(--accent-400), var(--primary-400));
+            top: 50%;
+            left: 80%;
+            animation: float-3 18s ease-in-out infinite;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: var(--primary-500);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .particle-1 {
+            top: 20%;
+            left: 10%;
+            animation: particle-float 8s ease-in-out infinite;
+        }
+
+        .particle-2 {
+            top: 60%;
+            right: 15%;
+            animation: particle-float 10s ease-in-out infinite 2s;
+        }
+
+        .particle-3 {
+            bottom: 30%;
+            left: 70%;
+            animation: particle-float 12s ease-in-out infinite 4s;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .content-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 24px;
+            padding: 3rem;
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.1),
+                0 0 0 1px rgba(255, 255, 255, 0.05);
+            position: relative;
+            animation: card-entrance 0.8s ease-out;
+        }
+
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            animation: logo-glow 2s ease-in-out infinite alternate;
+        }
+
+        .logo-part1 {
+            color: var(--primary-500);
+        }
+
+        .logo-part2 {
+            color: var(--gray-800);
+        }
+
+        .main-heading {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3rem;
+            font-weight: 600;
+            color: var(--gray-800);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient-shift 3s ease-in-out infinite;
+        }
+
+        .description {
+            font-size: 1.125rem;
+            color: var(--gray-600);
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .countdown-container {
+            margin-bottom: 2.5rem;
+        }
+
+        .countdown-circle {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 1rem;
+        }
+
+        .countdown-svg {
+            width: 100%;
+            height: 100%;
+            transform: rotate(-90deg);
+        }
+
+        .countdown-track {
+            fill: none;
+            stroke: rgba(255, 255, 255, 0.2);
+            stroke-width: 4;
+        }
+
+        .countdown-progress {
+            fill: none;
+            stroke: var(--primary-500);
+            stroke-width: 4;
+            stroke-linecap: round;
+            stroke-dasharray: 282.7;
+            stroke-dashoffset: 282.7;
+            animation: countdown-animation 2s linear;
+            filter: drop-shadow(0 0 10px var(--primary-300));
+        }
+
+        .countdown-number {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-600);
+            text-shadow: 0 0 20px var(--primary-300);
+        }
+
+        .countdown-text {
+            font-size: 1rem;
+            color: var(--gray-600);
+            font-weight: 500;
+        }
+
+        .button-container {
+            margin-bottom: 2.5rem;
+        }
+
+        .redirect-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--primary-500), var(--primary-600));
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 16px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 
+                0 10px 20px rgba(59, 130, 246, 0.3),
+                0 0 0 1px rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-text {
+            position: relative;
+            z-index: 2;
+        }
+
+        .btn-glow {
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .redirect-btn:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 
+                0 15px 30px rgba(59, 130, 246, 0.4),
+                0 0 0 1px rgba(255, 255, 255, 0.2);
+        }
+
+        .redirect-btn:hover .btn-glow {
+            opacity: 1;
+        }
+
+        .features-grid {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .feature-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            min-width: 120px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-item span {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--gray-700);
+            text-align: center;
+        }
+
+        /* Animations */
+        @keyframes float-1 {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(100px, -100px) rotate(120deg); }
+            66% { transform: translate(-50px, 150px) rotate(240deg); }
+        }
+
+        @keyframes float-2 {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(-80px, -120px) rotate(180deg); }
+        }
+
+        @keyframes float-3 {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(-120px, 80px) scale(1.1); }
+            66% { transform: translate(60px, -100px) scale(0.9); }
+        }
+
+        @keyframes particle-float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 1; }
+            50% { transform: translateY(-30px) rotate(180deg); opacity: 0.5; }
+        }
+
+        @keyframes card-entrance {
+            0% {
+                opacity: 0;
+                transform: translateY(50px) scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @keyframes logo-glow {
+            0% { text-shadow: 0 0 10px rgba(59, 130, 246, 0.3); }
+            100% { text-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+        }
+
+        @keyframes gradient-shift {
+            0%, 100% {
+                background: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+                background-clip: text;
+                -webkit-background-clip: text;
+            }
+            50% {
+                background: linear-gradient(135deg, var(--secondary-500), var(--accent-500));
+                background-clip: text;
+                -webkit-background-clip: text;
+            }
+        }
+
+        @keyframes countdown-animation {
+            0% { stroke-dashoffset: 282.7; }
+            100% { stroke-dashoffset: 0; }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .content-card {
+                padding: 2rem;
+            }
+
+            .main-heading {
+                font-size: 2.5rem;
+            }
+
+            .logo {
+                font-size: 2rem;
+            }
+
+            .countdown-circle {
+                width: 100px;
+                height: 100px;
+            }
+
+            .countdown-number {
+                font-size: 2rem;
+            }
+
+            .features-grid {
+                gap: 1rem;
+            }
+
+            .feature-item {
+                min-width: 100px;
+                padding: 0.75rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-heading {
+                font-size: 2rem;
+            }
+
+            .redirect-btn {
+                padding: 0.875rem 1.5rem;
+                font-size: 1rem;
+            }
+
+            .description {
+                font-size: 1rem;
+            }
+        }
     </style>
 
     <script>
-      setTimeout(() => {
-        window.location.href = "https://vaibhavtyagi.vercel.app";
-      }, 3000); // 3 seconds
-    </script>
-  </head>
-  <body class="relative flex items-center justify-center h-screen w-screen">
-    <!-- Decorative background orbs -->
-    <div class="orb top-[-50px] left-[-50px]"></div>
-    <div class="orb bottom-[-50px] right-[-50px] bg-secondary-500"></div>
+        // Countdown functionality
+        let countdownNumber = 2;
+        const countdownElement = document.getElementById('countdown');
+        
+        const countdownInterval = setInterval(() => {
+            countdownNumber--;
+            countdownElement.textContent = countdownNumber;
+            
+            if (countdownNumber <= 0) {
+                clearInterval(countdownInterval);
+                countdownElement.textContent = '🚀';
+                // Redirect after countdown
+                setTimeout(() => {
+                    window.location.href = 'https://vaibhavtyagi.vercel.app/';
+                }, 200);
+            }
+        }, 1000);
 
-    <!-- Glass panel -->
-    <div class="fade-in bg-white/20 border border-white/30 backdrop-blur-2xl shadow-xl rounded-2xl p-8 max-w-lg text-center">
-      <h1 class="font-grotesk text-2xl sm:text-3xl font-semibold text-gray-800 mb-4">
-        🚀 Redirecting to Vaibhav Tyagi's New Portfolio...
-      </h1>
-      <p class="text-gray-600 text-base">
-        If you're not redirected automatically,
-        <a href="https://vaibhavtyagi.vercel.app" class="text-primary-600 font-medium hover:underline">click here</a>.
-      </p>
-    </div>
-  </body>
+        // Fallback redirect after 3 seconds in case of any issues
+        setTimeout(() => {
+            window.location.href = 'https://vaibhavtyagi.vercel.app/';
+        }, 3000);
+
+        // Add some interactive particles on mouse movement
+        document.addEventListener('mousemove', (e) => {
+            if (Math.random() > 0.95) {
+                createSparkle(e.clientX, e.clientY);
+            }
+        });
+
+        function createSparkle(x, y) {
+            const sparkle = document.createElement('div');
+            sparkle.style.position = 'fixed';
+            sparkle.style.left = x + 'px';
+            sparkle.style.top = y + 'px';
+            sparkle.style.width = '4px';
+            sparkle.style.height = '4px';
+            sparkle.style.background = 'var(--primary-500)';
+            sparkle.style.borderRadius = '50%';
+            sparkle.style.pointerEvents = 'none';
+            sparkle.style.zIndex = '1000';
+            sparkle.style.animation = 'sparkle-fade 0.8s ease-out forwards';
+            
+            document.body.appendChild(sparkle);
+            
+            setTimeout(() => {
+                if (sparkle.parentNode) {
+                    sparkle.parentNode.removeChild(sparkle);
+                }
+            }, 800);
+        }
+
+        // Add sparkle animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes sparkle-fade {
+                0% {
+                    opacity: 1;
+                    transform: scale(0) rotate(0deg);
+                    box-shadow: 0 0 10px var(--primary-500);
+                }
+                50% {
+                    opacity: 1;
+                    transform: scale(1) rotate(180deg);
+                    box-shadow: 0 0 15px var(--primary-300);
+                }
+                100% {
+                    opacity: 0;
+                    transform: scale(0.5) rotate(360deg);
+                    box-shadow: 0 0 5px var(--primary-500);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
 </html>
