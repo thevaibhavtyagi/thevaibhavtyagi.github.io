@@ -23,7 +23,7 @@ This GitHub Pages project now acts as a clean redirection gateway to my **new an
 > https://thevaibhavtyagi.github.io
 
 > 🚀 **New Portfolio Website:**  
-> [https://vaibhavtyagi.vercel.app](https://vaibhavtyagi.vercel.app)
+> [https://vaibhavtyagi.me](https://vaibhavtyagi.me)
 
 ---
 
